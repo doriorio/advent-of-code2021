@@ -11,7 +11,7 @@ const getInput = () => {
  * Day one challenge - see how many measurements are greater than
  * the previous measurement
  */
-function dayOne() {
+function partOne() {
     let input = getInput();
     const greaters = input.filter(function(num, idx) {
         if (num > input[idx-1]) {
@@ -22,11 +22,11 @@ function dayOne() {
     var howMany = greaters.length + 1;
     return howMany;
 }
-dayOne();
-//howMany = 1553;
+var partOneAnswer = partOne();
+//partOneAnswer = 1553;
 //Pt 2
 
-function dayTwo() {
+function partTwo() {
     let input = getInput();
 
     var inputArr = [];
@@ -58,5 +58,5 @@ function dayTwo() {
 
 
 }
-
-
+var partTwoAnswer = partTwo();
+//1597
